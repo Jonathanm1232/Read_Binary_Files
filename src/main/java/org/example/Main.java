@@ -25,11 +25,11 @@ public class Main {
     public static String turnTexttoHex(String text) {
         String hex = "";
         for (int i = 0; i < text.length(); i++) {
-            //add a space after every 2 characters and a line break after ever 10th character block
+            //add a line break after ever 10th character block
             if (i % 10 == 0 && i != 0) {
                 hex += "\n";
             }
-            //turn the character into a hex value and add a space after every second character
+            //turn the character into a hex values
             hex += Integer.toHexString(text.charAt(i)) + " ";
         }
         // add --------- at the end of the string
